@@ -1,0 +1,124 @@
+.founders {
+  padding: 45px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.founders .founders__header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.text.text--h1 {
+  font-size: 3.125rem;
+  font-weight: 700;
+  font-family: var(--font-audiowide);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-color: var(--brand-primary);
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+.swiper-backface-hidden .swiper-slide {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.swiper-android .swiper-slide,
+.swiper-wrapper {
+  transform: translate3d(0px, 0, 0);
+}
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+
+.founderCard {
+  background-color: #000d39;
+  background-color: var(--brand-background);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.founderCard .founderCard__imgDiv {
+  width: 100%;
+  height: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.founderCard .founderCard__imgDiv img {
+  object-fit: cover;
+  height: 100%;
+  width: auto;
+}
+
+.founderCard .founderCard__name {
+  margin: 20px 0 10px;
+  text-align: center;
+}
+
+.founderCard .founderCard__paragraph {
+  text-align: center;
+}
+
+.text.text--body {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: var(--font-arvo);
+}
+
+.text.text--h4 {
+  font-family: var(--font-arvo);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .text.text--h4 {
+    font-size: 1.1875rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .founderCard .founderCard__imgDiv img {
+    width: 100%;
+    height: auto;
+  }
+  .text.text--h4 {
+    font-size: 1.3125rem;
+  }
+}
+
+.founderCard__socials {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  height: 20px;
+}
+
+.founderCard__socials svg {
+  width: 20px;
+  height: 20px;
+}

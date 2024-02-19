@@ -1,0 +1,414 @@
+@use "../../src/common";
+
+.finePrint {
+  width: 100%;
+  text-align: center;
+}
+
+.banner {
+  justify-content: space-between;
+  display: flex;
+  width: 90%;
+  gap: 5%;
+  margin: auto;
+}
+
+.banner-left {
+  width: 50%;
+  text-align: right;
+}
+
+.banner-left img {
+  width: min(450px, 100%);
+}
+
+.banner-right {
+  width: 50%;
+  font-family: var(--font-freename);
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.banner-right h4 {
+  font-size: 1.25em;
+  color: #1c69ff;
+}
+
+.banner-right h3 {
+  font-size: 2em;
+  overflow-wrap: anywhere;
+}
+
+.banner-right p {
+  font-size: 1.1em;
+  width: 80%;
+  font-family: var(--font-tomorrow);
+  font-style: normal;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.banner-right ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: min(90%, 800px);
+  justify-content: left;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.banner-right li {
+  font-size: 0.9em;
+  background: #020637;
+  border-radius: 200px;
+  padding: 16px 17px;
+}
+
+.domain-details-area {
+  font-family: var(--font-freename);
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+  width: 90%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.domain-details-area h2 {
+  font-size: 1.5em;
+}
+
+.domain-details-area input {
+  width: 270px;
+  height: 51px;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px rgba(146, 146, 146, 0.2);
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+  font-size: 1em;
+}
+
+.domain-details-area select {
+  background-color: transparent;
+  font-size: 1em;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  border-right: 10px solid rgba(0, 0, 0, 0.3);
+  height: 51px;
+  padding: 0px 10px 0px 20px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px rgba(146, 146, 146, 0.2);
+}
+
+.domain-details-area select:focus {
+  outline: none;
+}
+
+.domain-details-area select option {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.domain-offers {
+  display: flex;
+  width: 100%;
+  margin: 100px auto;
+  text-align: left;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.domain-offers h4,
+.leasingSection h4 {
+  font-size: 20px;
+  color: #1c69ff;
+  text-align: left;
+  font-family: var(--font-freename);
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.about-seller {
+  width: 40%;
+}
+
+.about-seller .sellerDiv {
+  background: linear-gradient(180deg, #011e6a 0%, #001651 100%);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  width: 90%;
+  padding: 20px;
+}
+
+.about-seller div h3 {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  line-break: anywhere;
+  display: inline-block;
+  font-family: var(--font-freename);
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.about-seller img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.current-offer {
+  width: 60%;
+}
+
+.current-offer div {
+  width: 100%;
+  height: 464px;
+  overflow-y: auto;
+  background: linear-gradient(180deg, #011e6a 0%, #001651 100%);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.current-offer div::-webkit-scrollbar {
+  width: 10px;
+}
+
+.current-offer div::-webkit-scrollbar-track {
+  background: #020637;
+  border-radius: 20px;
+}
+
+.current-offer div::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.current-offer div .hl {
+  width: 100%;
+  height: 2px;
+  padding: 0;
+  border-radius: 50px;
+  background: #020637;
+  margin: 20px auto;
+}
+
+.current-offer div ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.current-offer-domains li {
+  font-family: var(--font-tomorrow);
+  font-style: normal;
+  font-weight: 500;
+  font-size: min(1.7vw, 14px);
+  color: #a4b9f1;
+  text-align: center;
+  width: 25%;
+}
+
+.responsive-domain-offers-headings li {
+  width: 25%;
+  margin: auto;
+  list-style: none;
+  font-size: min(1.3vw, 14px);
+  text-align: center;
+  font-family: Mokoto Glitch;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.leaseButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.leasingControls,
+.orderControls {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  max-width: 610px;
+}
+
+.leasingControls span {
+  font-family: var(--font-freename);
+  font-style: normal;
+  font-weight: 400;
+  font-size: min(14px, 2vw);
+}
+
+.orderControls {
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.inputLabel {
+  font-size: 1em;
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.inputRight {
+  display: inline-block;
+  text-align: left;
+}
+
+.leasingSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-around;
+}
+
+.leasingSection {
+  .current-offer {
+    flex: 1 1 600px;
+    max-width: 970px;
+    min-width: min(650px, 90vw);
+  }
+}
+
+.leasingExtensionControls {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  padding: 20px;
+  width: min(650px, 90vw);
+  .actionButton {
+    align-self: center;
+  }
+}
+
+.normalLink {
+  background: none;
+  box-shadow: none;
+  &:hover {
+    color: #4784fd;
+  }
+
+  &:hover * {
+    color: #4784fd;
+  }
+
+  cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner-left {
+    order: 1;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .banner-right {
+    order: 2;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+  }
+
+  .banner-right ul {
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .banner-right p {
+    width: 100%;
+  }
+
+  .domain-offers {
+    display: block;
+    margin-top: 50px;
+  }
+
+  .about-seller {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .about-seller .sellerDiv {
+    text-align: center;
+    margin: auto;
+  }
+
+  .domain-offers h4,
+  .leasingSection h4 {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  .current-offer {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .domain-details-area .actionButton {
+    margin: 20px auto;
+  }
+
+  .leasingControls,
+  .orderControls {
+    width: 100%;
+    align-items: center;
+  }
+
+  .inputLabel {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-right: 0px;
+    margin-top: 10x;
+    margin-bottom: 10px;
+  }
+
+  .inputRight {
+    width: unset;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .inputLabel {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.banner img {
+  display: inline;
+}
+
+.actionButton {
+  margin-right: 5px;
+}
+
+.TransakButton {
+  padding: 5px;
+}

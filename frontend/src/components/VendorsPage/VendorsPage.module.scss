@@ -1,0 +1,45 @@
+@use "../../common";
+
+.vendors-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.wallet {
+  font-family: monospace;
+}
+
+.button {
+  word-break: normal;
+}
+
+.tableWrapper {
+  font-family: var(--font-tomorrow);
+  font-size: 1.2em;
+
+  @extend .tableFixHead;
+
+  max-height: 80vh;
+  max-width: 90vw;
+
+  word-break: break-all;
+
+  & td {
+    padding: 5px;
+  }
+
+  & td {
+    border-bottom: 1px solid #888;
+    border-top: 1px solid #888;
+  }
+
+  & th {
+    background: #011e6a;
+    padding-top: 0.5em;
+  }
+
+  padding: 0em 0.5em;
+}

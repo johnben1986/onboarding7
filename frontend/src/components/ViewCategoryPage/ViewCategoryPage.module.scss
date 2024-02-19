@@ -1,0 +1,39 @@
+.categoryPage {
+  display: flex;
+  gap: 20px;
+  @media screen and (max-width: 1250px) {
+    flex-direction: column;
+  }
+}
+
+.leftColumn {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.rightColumn {
+  max-width: 600px;
+}
+
+.categoryTitle {
+  font-size: 30px;
+}
+
+.categoryImage {
+  width: 600px;
+  height: 600px;
+
+  @media screen and (max-width: 667px) {
+    width: 100%;
+    height: 100%;
+  }
+
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.descriptionCard {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

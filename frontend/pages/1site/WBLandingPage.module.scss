@@ -1,0 +1,37 @@
+.faqCollapse {
+  border: 0;
+  border-radius: 15px;
+  background-color: transparent;
+
+  :global {
+    .ant-collapse-header {
+      font-family: var(--font-tomorrow);
+      font-size: 1.3em;
+      font-weight: bold;
+      background-color: var(--brand-primary);
+      color: white !important;
+      border-radius: 15px !important;
+    }
+
+    .ant-collapse-content-box {
+      color: black;
+      padding-top: 2em;
+      background-color: var(--brand-background);
+      padding-bottom: 2em;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    .ant-collapse-content {
+      border-top: 0;
+      background-color: transparent;
+    }
+
+    .ant-collapse-item {
+      border-bottom: 0;
+      background-color: var(--brand-primary);
+      border-radius: 15px !important;
+      margin-bottom: 15px;
+    }
+  }
+}
